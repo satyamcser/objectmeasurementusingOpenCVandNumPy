@@ -1,0 +1,975 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\usepackage[caption=false,font=footnotesize]{subfig}
+\end_preamble
+\options conference
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures false
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is a template \SpecialChar LyX
+ file for conference articles of conferences organized
+ by the Institute of Electrical and Electronics Engineers (IEEE).
+ For IEEE journal articles, see the template file 
+\emph on
+IEEEtran-Journal.lyx
+\emph default
+.
+ For general info see 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://wiki.lyx.org/Examples/IEEE
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+It is important that you use the correct document class options for your
+ document..
+ These are explained in the IEEEtran documentation: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://mirror.ctan.org/macros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Object Measurement using OpenCV & NumPy
+\end_layout
+
+\begin_layout Author
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Satyam Mishra
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status open
+
+\begin_layout Plain Layout
+Informatics and Computer Engineering,
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+International School - Vietnam National University,
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hanoi, Vietnam
+\begin_inset Newline newline
+\end_inset
+
+Email: satyam.entrprnr@gmail.com
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Hoang Thi Chuc
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status open
+
+\begin_layout Plain Layout
+Informatics and Computer Engineering,
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+International School - Vietnam National University,
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hanoi, Vietnam
+\begin_inset Newline newline
+\end_inset
+
+Email: hoangthichuc2001@gmail.com
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Name
+status open
+
+\begin_layout Plain Layout
+Cao Sy Minh
+\end_layout
+
+\end_inset
+
+
+\begin_inset Flex Author Affiliation
+status open
+
+\begin_layout Plain Layout
+Informatics and Computer Engineering,
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+International School - Vietnam National University,
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Hanoi, Vietnam
+\begin_inset Newline newline
+\end_inset
+
+Email: caosminh1@gmail.com
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Object Measurement from real time image play an important role in daily
+ industrial uses.
+ In this program we detect real-time object's dimensions.
+ The object measurement and detection are some of the important topics of
+ computer vision.
+ This project presents the way to detect and measure an object's dimension
+ in real time from webcam.
+ We have utilised the OpenCV and NumPy libraries to measure the object's
+ dimension in real-time.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Keywords: Object Measurement, OpenCV, NumPy, Webcam
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+“Object Measurement” is a program that we have used to calculate and display
+ real-time object’s measurements.
+ There are not many real-time object measurement models.
+ Usually, it is a basic point of computer vision issues.
+ As expressed, this extend presents a technique for computing the estimations
+ of measurement of dimensions in real-time from images.
+ To clarify its working it fundamentally employs a webcam and a white A4
+ sheet paper as a background to identify the object.
+ After identifying the object, it shows its measurements in specified measuring
+ units at real-time.
+ Within the execution of the proposed method, we outlined a framework that
+ utilized OpenCV and NumPy library.
+ We used PyCharm IDE for programming the whole program.
+\end_layout
+
+\begin_layout Section
+Previous Work
+\end_layout
+
+\begin_layout Standard
+Some Edge Detection techniqus for Images Segmentation have been researched
+ earlier as well.
+ In the (Muthukrishnan.RDec2011)
+\begin_inset Formula $^{1}$
+\end_inset
+
+ various edge detection techniques were carried out with an image using
+ MATLAB.
+ It was observed that the results Marr-Hildreth, LoG and Canny edge detectors
+ produce almost same edge map.
+ Canny result is superior one when compared to all for a selected image
+ since different edge detection work better under different conditions.
+ Even though, so many edge detection techniques are available in the literature,
+ since it is a challenging task to the research communities to detect the
+ exact image without noise from the original image.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Methodology
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3.1: PLATFORM OR TECHNOLOGY USED:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+PyCharm
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+PyCharm is an integrated development environment (IDE) used in computer
+ programming, specifically for the Python programming language.
+\end_layout
+
+\begin_layout Itemize
+It provides code analysis, a graphical debugger, an integrated unit tester,
+ integration with version control systems (VCSes), and supports web development
+ with Django as well as data science with Anaconda.
+\end_layout
+
+\begin_layout Itemize
+PyCharm is cross-platform, with Windows, macOS and Linux versions.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+OpenCV
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+OpenCV (Open Source Computer Vision Library) is a library of programming
+ functions mainly aimed at real-time computer vision.
+\end_layout
+
+\begin_layout Itemize
+OpenCV runs on the following desktop operating systems: Windows, Linux,
+ macOS, FreeBSD, NetBSD, OpenBSD.
+\end_layout
+
+\begin_layout Itemize
+OpenCV is written in C++ and its primary interface is in C++, but it still
+ retains a less comprehensive though extensive older C interface.
+ All of the new developments and algorithms appear in the C++ interface.
+ There are bindings in Python, Java and MATLAB/OCTAVE.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+NumPy
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+NumPy is a library for the Python programming language, adding support for
+ large, multi-dimensional arrays and matrices, along with a large collection
+ of high-level mathematical functions to operate on these arrays.
+\end_layout
+
+\begin_layout Itemize
+NumPy targets the CPython reference implementation of Python, which is a
+ non-optimizing bytecode interpreter.
+ Mathematical algorithms written for this version of Python often run much
+ slower than compiled equivalents due to the absence of compiler optimization.
+ 
+\end_layout
+
+\begin_layout Itemize
+NumPy addresses the slowness problem partly by providing multidimensional
+ arrays and functions and operators that operate efficiently on arrays;
+ using these requires rewriting some code, mostly inner loops, using NumPy.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\series bold
+Webcam
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pre-installed webcam in one's laptop with enough pixels quality to capture
+ a picture to recognize it.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3.2: Steps of designing the project: 
+\end_layout
+
+\begin_layout Enumerate
+Download all dependencies and required libraries in PyCharm IDE, libraries
+ and packages such as OpenCV, NumPy.
+ After that import OpenCV as cv2 and numpy as np.
+\end_layout
+
+\begin_layout Enumerate
+Write code for controlling webcam to turn it off or on and then declare
+ a path of the image to be taken for measurement.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/ACER/Downloads/Screenshot 2022-06-21 152037.jpg
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Settings for image to be taken from webcam
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Since all initial settings are done, now we will write the code to measure
+ the object from image taken.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Created a file utlis.py to find the contours and apply processes.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Created a canny image of the input image, dilated it and obtained a smooth
+ canny image.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/ACER/Downloads/Screenshot 2022-06-21 152232.jpg
+	lyxscale 70
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Canny image display of the input image
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Writing code to finding the constraint of A4 sheet paper taken for testing.
+\end_layout
+
+\begin_layout Enumerate
+Applying filter as a rectangle as the A4 sheet paper taken for testing is
+ also a rectangle.
+ Finalizing the contours and appending the length and area.
+ Therefore, specifying the detection of the A4 sheet paper.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Applying an arrowed line display the estimated measurement of the object.
+\end_layout
+
+\begin_layout Enumerate
+Applying some mathematical concepts such as distance formula, Pythagoras
+ theorem to calculate object measurement on A4 sheet paper with the help
+ of canny image measure.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/ACER/Downloads/math.png
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+If object is in other angles, getting their measurements using distance
+ formula or Pythagoras theorem.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+3.3: Flowchart:
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/ACER/Downloads/flow.drawio.png
+	lyxscale 50
+	width 5cm
+	height 7cm
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Flowchart of the whole program
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Results
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/ACER/Downloads/output.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Input Image and Output of the Program as displaying measurement of the object
+ detected
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusions:
+\end_layout
+
+\begin_layout Plain Layout
+In industrial sector, many improvements can be made by utilizing such advance
+ and efficient technologies.
+ Like measuring the height and width of courier, etc.
+ The project we implemented for object measurement using OpenCV, NumPy successfu
+lly measures the dimension of the object detected from the input image.
+ And also it measures the dimensions of the object in real-time as well.
+ We used the laptop's webcam to measure the dimensions of various objects
+ in real-time.
+ It was little bit slow but measured dimensions successfully.
+ Webcam captures the image in real-time and take it as input and then process
+ the code to give output as the measurements of object in the input image.
+ The canny edge detector we implemented helps to detect the edges of the
+ object and therefore the dimensions.
+ This process is really efficient if applied and implemented in real world.
+\end_layout
+
+\begin_layout Section
+Appendix
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+btprint "btPrintAll"
+bibfiles "citation"
+options "IEEEtran"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
