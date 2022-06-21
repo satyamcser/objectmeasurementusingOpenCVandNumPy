@@ -5,3 +5,5 @@ To clarify its working it fundamentally employs a webcam and a white A4 sheet pa
 it shows its measurements in specified measuring units at real-time. Within the execution of the proposed method, 
 we outlined a framework that utilized OpenCV and NumPy library. We used PyCharm IDE for programming the whole program.
 
+By- Satyam Mishra
+
