@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import utlis
 ####################
-webcam = False
+webcam = False #make it 'True' for real-time object measurement
 path = '2.jpg'
 cap = cv2.VideoCapture(0)
 cap.set(10,160) #brightnessofvideo
